@@ -22,6 +22,12 @@ wf-recorder:
             fedora:
                 package:
                     - wf-recorder
+            arch:
+                package:
+                    - wf-recorder
+            omarchy:
+                package:
+                    - wf-recorder
         plan:
             - check: the wf-recorder binary is installed at /usr/bin/wf-recorder
               file:
@@ -52,7 +58,7 @@ wf-recorder-skill:
             
             ## Packages
             
-            RPM: `wf-recorder`
+            RPM: `wf-recorder` · PAC: `wf-recorder` (arch/omarchy, extra repo)
             
             ## What It Does
             
